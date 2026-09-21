@@ -8,10 +8,10 @@ void main() {
     while(count != 3){
         System.out.print("\nDigite a senha: ");
         senha1 = input.nextInt();
+        count++;
         if (senha1 != passwd){
             contagemRegressiva--;
-            System.out.printf("Incorreto tente novamente!\n%d tentativas restantes de login.", contagemRegressiva);
-            count++;
+            System.out.printf("Senha Incorreta, tente novamente!\n%d tentativas restantes de login.", contagemRegressiva);
         }else{
             System.out.printf("Autorizado!\nTentativas: %d", count);
             break;
